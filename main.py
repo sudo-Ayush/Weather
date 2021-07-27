@@ -13,8 +13,8 @@ try:
     city_name = f'Weather stats for {data["name"]} || {dt}'.upper()
     weather = f'Current weather description : {data["weather"][0]["description"]}'.upper()
     temp = data["main"]["temp"] -273.15
-    temperature = f'Current temperature is      : {round(temp,2)}'.upper()
-    humidity = f'Current humidity            : {data["main"]["humidity"]} %'.upper()
+    temperature = f'Current temperature is      : {round(temp,2)}°C'.upper()
+    humidity = f'Current humidity            : {data["main"]["humidity"]}%'.upper()
     wind = f'Current wind speed          : {data["wind"]["speed"]} kmph'.upper()
 
 
